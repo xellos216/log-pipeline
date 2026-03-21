@@ -1,0 +1,154 @@
+line_number,raw,error
+8,"192.168.0.10 - - [20/Mar/2026:10:12:29 +0900] ""INVALID /login HTTP/1.1"" 200 100",invalid method: INVALID
+14,"8.8.8.8 - - [20/Mar/2026:10:20:12 +0900] ""PUT /api/users HTTP/1.1"" 99 100",invalid format
+19,"172.16.1.20 - - [20/Mar/2026:10:48:21 +0900] ""PUT /health HTTP/1.1"" 99 100",invalid format
+29,"8.8.8.8 - - [20/Mar/2026:10:32:17 +0900] ""POST /index.html HTTP/1.1"" 999 100",status_code out of range: 999
+30,"10.0.0.5 - - [20/Mar/2026:10:16:56 +0900] ""DELETE / HTTP/1.1"" 999 100",status_code out of range: 999
+51,"10.0.0.5 - - [20/Mar/2026:10:34:39 +0900] ""PUT / HTTP/1.1"" 999 100",status_code out of range: 999
+54,this is not a valid log line,invalid format
+68,"8.8.8.8 - - [20/Mar/2026:10:47:27 +0900] ""GET /health HTTP/1.1"" 99 100",invalid format
+75,"8.8.8.8 - - [20/Mar/2026:10:45:33 +0900] ""FETCH /api/users HTTP/1.1"" 200 100",invalid method: FETCH
+79,this is not a valid log line,invalid format
+83,"8.8.8.8 - - [20/Mar/2026:10:45:44 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+88,"10.0.0.5 - - [20/Mar/2026:10:56:31 +0900] ""PUT /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+98,this is not a valid log line,invalid format
+99,"127.0.0.1 - - [20/Mar/2026:10:37:59 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+106,"192.168.0.10 - - [20/Mar/2026:10:56:21 +0900] ""GET /index.html HTTP/1.1"" 99 100",invalid format
+111,"127.0.0.1 - - [20/Mar/2026:10:00:05 +0900] ""GET /api/orders HTTP/1.1"" 99 100",invalid format
+112,"127.0.0.1 - - [20/Mar/2026:10:13:01 +0900] ""INVALID /api/users HTTP/1.1"" 200 100",invalid method: INVALID
+114,"8.8.8.8 - - [20/Mar/2026:10:53:33 +0900] ""GET /api/orders HTTP/1.1"" 999 100",status_code out of range: 999
+115,this is not a valid log line,invalid format
+121,this is not a valid log line,invalid format
+129,this is not a valid log line,invalid format
+142,this is not a valid log line,invalid format
+157,"127.0.0.1 - - [20/Mar/2026:10:49:44 +0900] ""GET /index.html HTTP/1.1"" 99 100",invalid format
+161,"8.8.8.8 - - [20/Mar/2026:10:05:41 +0900] ""PUT /health HTTP/1.1"" 999 100",status_code out of range: 999
+181,"8.8.8.8 - - [20/Mar/2026:10:27:37 +0900] ""FETCH /health HTTP/1.1"" 200 100",invalid method: FETCH
+184,this is not a valid log line,invalid format
+189,"10.0.0.5 - - [20/Mar/2026:10:59:59 +0900] ""GET /dashboard HTTP/1.1"" 99 100",invalid format
+193,this is not a valid log line,invalid format
+199,"127.0.0.1 - - [20/Mar/2026:10:06:12 +0900] ""POST /health HTTP/1.1"" 999 100",status_code out of range: 999
+205,"8.8.8.8 - - [20/Mar/2026:10:46:23 +0900] ""FETCH /dashboard HTTP/1.1"" 200 100",invalid method: FETCH
+216,"127.0.0.1 - - [20/Mar/2026:10:33:46 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+227,"192.168.0.10 - - [20/Mar/2026:10:31:57 +0900] ""DELETE /api/orders HTTP/1.1"" 999 100",status_code out of range: 999
+234,"192.168.0.10 - - [20/Mar/2026:10:39:04 +0900] ""POST /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+242,"192.168.0.10 - - [20/Mar/2026:10:47:02 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+249,this is not a valid log line,invalid format
+251,"10.0.0.5 - - [20/Mar/2026:10:59:48 +0900] ""FETCH /health HTTP/1.1"" 200 100",invalid method: FETCH
+267,this is not a valid log line,invalid format
+268,"172.16.1.20 - - [20/Mar/2026:10:18:34 +0900] ""FETCH /dashboard HTTP/1.1"" 200 100",invalid method: FETCH
+272,this is not a valid log line,invalid format
+292,this is not a valid log line,invalid format
+294,"10.0.0.5 - - [20/Mar/2026:10:55:06 +0900] ""GET /login HTTP/1.1"" 999 100",status_code out of range: 999
+298,this is not a valid log line,invalid format
+300,this is not a valid log line,invalid format
+303,this is not a valid log line,invalid format
+306,this is not a valid log line,invalid format
+312,"192.168.0.10 - - [20/Mar/2026:10:27:54 +0900] ""FETCH /api/users HTTP/1.1"" 200 100",invalid method: FETCH
+314,this is not a valid log line,invalid format
+317,this is not a valid log line,invalid format
+323,"10.0.0.5 - - [20/Mar/2026:10:50:29 +0900] ""DELETE /login HTTP/1.1"" 999 100",status_code out of range: 999
+325,"8.8.8.8 - - [20/Mar/2026:10:33:47 +0900] ""PUT /dashboard HTTP/1.1"" 999 100",status_code out of range: 999
+332,"192.168.0.10 - - [20/Mar/2026:10:01:09 +0900] ""INVALID /api/orders HTTP/1.1"" 200 100",invalid method: INVALID
+333,this is not a valid log line,invalid format
+335,"10.0.0.5 - - [20/Mar/2026:10:28:40 +0900] ""INVALID /login HTTP/1.1"" 200 100",invalid method: INVALID
+337,this is not a valid log line,invalid format
+341,"127.0.0.1 - - [20/Mar/2026:10:02:04 +0900] ""INVALID /api/users HTTP/1.1"" 200 100",invalid method: INVALID
+348,"127.0.0.1 - - [20/Mar/2026:10:51:46 +0900] ""GET /api/orders HTTP/1.1"" 99 100",invalid format
+349,"8.8.8.8 - - [20/Mar/2026:10:00:23 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH
+357,"127.0.0.1 - - [20/Mar/2026:10:48:53 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+360,"192.168.0.10 - - [20/Mar/2026:10:25:25 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH
+372,"192.168.0.10 - - [20/Mar/2026:10:53:39 +0900] ""PUT /api/orders HTTP/1.1"" 99 100",invalid format
+376,"10.0.0.5 - - [20/Mar/2026:10:03:28 +0900] ""PUT /index.html HTTP/1.1"" 999 100",status_code out of range: 999
+379,"172.16.1.20 - - [20/Mar/2026:10:25:14 +0900] ""INVALID /health HTTP/1.1"" 200 100",invalid method: INVALID
+391,this is not a valid log line,invalid format
+393,"127.0.0.1 - - [20/Mar/2026:10:03:23 +0900] ""POST /api/users HTTP/1.1"" 99 100",invalid format
+418,"10.0.0.5 - - [20/Mar/2026:10:01:36 +0900] ""POST /health HTTP/1.1"" 99 100",invalid format
+427,"172.16.1.20 - - [20/Mar/2026:10:28:57 +0900] ""POST / HTTP/1.1"" 999 100",status_code out of range: 999
+438,this is not a valid log line,invalid format
+444,"127.0.0.1 - - [20/Mar/2026:10:25:59 +0900] ""DELETE /dashboard HTTP/1.1"" 999 100",status_code out of range: 999
+462,"127.0.0.1 - - [20/Mar/2026:10:07:49 +0900] ""DELETE /api/users HTTP/1.1"" 99 100",invalid format
+465,this is not a valid log line,invalid format
+470,"172.16.1.20 - - [20/Mar/2026:10:31:23 +0900] ""POST /login HTTP/1.1"" 999 100",status_code out of range: 999
+472,"127.0.0.1 - - [20/Mar/2026:10:10:53 +0900] ""INVALID /health HTTP/1.1"" 200 100",invalid method: INVALID
+479,"10.0.0.5 - - [20/Mar/2026:10:46:26 +0900] ""GET / HTTP/1.1"" 999 100",status_code out of range: 999
+482,"172.16.1.20 - - [20/Mar/2026:10:06:08 +0900] ""GET /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+483,"127.0.0.1 - - [20/Mar/2026:10:46:21 +0900] ""INVALID /health HTTP/1.1"" 200 100",invalid method: INVALID
+492,"8.8.8.8 - - [20/Mar/2026:10:11:21 +0900] ""INVALID /health HTTP/1.1"" 200 100",invalid method: INVALID
+493,this is not a valid log line,invalid format
+504,"192.168.0.10 - - [20/Mar/2026:10:46:05 +0900] ""PUT /dashboard HTTP/1.1"" 999 100",status_code out of range: 999
+508,"192.168.0.10 - - [20/Mar/2026:10:13:40 +0900] ""FETCH /health HTTP/1.1"" 200 100",invalid method: FETCH
+529,"127.0.0.1 - - [20/Mar/2026:10:17:03 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH
+531,"172.16.1.20 - - [20/Mar/2026:10:19:06 +0900] ""FETCH / HTTP/1.1"" 200 100",invalid method: FETCH
+540,"172.16.1.20 - - [20/Mar/2026:10:37:13 +0900] ""POST / HTTP/1.1"" 999 100",status_code out of range: 999
+542,"192.168.0.10 - - [20/Mar/2026:10:16:21 +0900] ""PUT /index.html HTTP/1.1"" 999 100",status_code out of range: 999
+543,this is not a valid log line,invalid format
+544,"127.0.0.1 - - [20/Mar/2026:10:59:41 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH
+545,"10.0.0.5 - - [20/Mar/2026:10:32:34 +0900] ""INVALID /index.html HTTP/1.1"" 200 100",invalid method: INVALID
+551,this is not a valid log line,invalid format
+567,"172.16.1.20 - - [20/Mar/2026:10:24:41 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+573,this is not a valid log line,invalid format
+586,"172.16.1.20 - - [20/Mar/2026:10:36:02 +0900] ""INVALID /login HTTP/1.1"" 200 100",invalid method: INVALID
+588,"8.8.8.8 - - [20/Mar/2026:10:26:57 +0900] ""DELETE /api/orders HTTP/1.1"" 99 100",invalid format
+592,"10.0.0.5 - - [20/Mar/2026:10:27:52 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+594,"10.0.0.5 - - [20/Mar/2026:10:59:50 +0900] ""GET /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+602,this is not a valid log line,invalid format
+609,"172.16.1.20 - - [20/Mar/2026:10:38:39 +0900] ""INVALID /api/users HTTP/1.1"" 200 100",invalid method: INVALID
+622,"192.168.0.10 - - [20/Mar/2026:10:19:45 +0900] ""DELETE /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+626,this is not a valid log line,invalid format
+636,"127.0.0.1 - - [20/Mar/2026:10:30:54 +0900] ""POST /api/users HTTP/1.1"" 99 100",invalid format
+640,"172.16.1.20 - - [20/Mar/2026:10:03:11 +0900] ""GET /login HTTP/1.1"" 99 100",invalid format
+643,"172.16.1.20 - - [20/Mar/2026:10:21:04 +0900] ""GET /login HTTP/1.1"" 999 100",status_code out of range: 999
+656,this is not a valid log line,invalid format
+661,"192.168.0.10 - - [20/Mar/2026:10:12:06 +0900] ""POST /dashboard HTTP/1.1"" 999 100",status_code out of range: 999
+664,"10.0.0.5 - - [20/Mar/2026:10:18:42 +0900] ""POST /api/orders HTTP/1.1"" 99 100",invalid format
+672,this is not a valid log line,invalid format
+676,"172.16.1.20 - - [20/Mar/2026:10:00:29 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+677,"127.0.0.1 - - [20/Mar/2026:10:18:38 +0900] ""INVALID /health HTTP/1.1"" 200 100",invalid method: INVALID
+680,"192.168.0.10 - - [20/Mar/2026:10:20:12 +0900] ""INVALID /api/orders HTTP/1.1"" 200 100",invalid method: INVALID
+686,this is not a valid log line,invalid format
+696,"172.16.1.20 - - [20/Mar/2026:10:48:27 +0900] ""POST /health HTTP/1.1"" 999 100",status_code out of range: 999
+697,this is not a valid log line,invalid format
+722,this is not a valid log line,invalid format
+730,"10.0.0.5 - - [20/Mar/2026:10:42:35 +0900] ""INVALID /index.html HTTP/1.1"" 200 100",invalid method: INVALID
+740,"172.16.1.20 - - [20/Mar/2026:10:44:36 +0900] ""GET /api/orders HTTP/1.1"" 999 100",status_code out of range: 999
+745,"127.0.0.1 - - [20/Mar/2026:10:39:59 +0900] ""GET /login HTTP/1.1"" 99 100",invalid format
+750,"8.8.8.8 - - [20/Mar/2026:10:09:05 +0900] ""POST /dashboard HTTP/1.1"" 99 100",invalid format
+753,"8.8.8.8 - - [20/Mar/2026:10:23:05 +0900] ""DELETE /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+754,"127.0.0.1 - - [20/Mar/2026:10:24:42 +0900] ""GET /health HTTP/1.1"" 999 100",status_code out of range: 999
+761,this is not a valid log line,invalid format
+762,"192.168.0.10 - - [20/Mar/2026:10:43:25 +0900] ""INVALID /api/orders HTTP/1.1"" 200 100",invalid method: INVALID
+772,"127.0.0.1 - - [20/Mar/2026:10:51:07 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+773,"8.8.8.8 - - [20/Mar/2026:10:30:45 +0900] ""POST / HTTP/1.1"" 99 100",invalid format
+775,"10.0.0.5 - - [20/Mar/2026:10:56:40 +0900] ""POST /login HTTP/1.1"" 99 100",invalid format
+777,"10.0.0.5 - - [20/Mar/2026:10:39:50 +0900] ""DELETE /index.html HTTP/1.1"" 99 100",invalid format
+795,this is not a valid log line,invalid format
+804,this is not a valid log line,invalid format
+810,"192.168.0.10 - - [20/Mar/2026:10:49:19 +0900] ""INVALID /api/orders HTTP/1.1"" 200 100",invalid method: INVALID
+812,this is not a valid log line,invalid format
+825,this is not a valid log line,invalid format
+832,"192.168.0.10 - - [20/Mar/2026:10:42:39 +0900] ""PUT /api/users HTTP/1.1"" 99 100",invalid format
+833,"8.8.8.8 - - [20/Mar/2026:10:35:37 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH
+841,this is not a valid log line,invalid format
+843,"8.8.8.8 - - [20/Mar/2026:10:51:29 +0900] ""PUT /health HTTP/1.1"" 999 100",status_code out of range: 999
+855,this is not a valid log line,invalid format
+862,this is not a valid log line,invalid format
+865,"8.8.8.8 - - [20/Mar/2026:10:37:54 +0900] ""INVALID / HTTP/1.1"" 200 100",invalid method: INVALID
+870,"192.168.0.10 - - [20/Mar/2026:10:29:02 +0900] ""GET /health HTTP/1.1"" 999 100",status_code out of range: 999
+877,this is not a valid log line,invalid format
+886,"8.8.8.8 - - [20/Mar/2026:10:54:27 +0900] ""INVALID /dashboard HTTP/1.1"" 200 100",invalid method: INVALID
+899,"192.168.0.10 - - [20/Mar/2026:10:27:05 +0900] ""POST / HTTP/1.1"" 99 100",invalid format
+916,"127.0.0.1 - - [20/Mar/2026:10:39:17 +0900] ""FETCH /health HTTP/1.1"" 200 100",invalid method: FETCH
+919,"8.8.8.8 - - [20/Mar/2026:10:57:34 +0900] ""POST /api/orders HTTP/1.1"" 99 100",invalid format
+927,"192.168.0.10 - - [20/Mar/2026:10:48:29 +0900] ""PUT /dashboard HTTP/1.1"" 99 100",invalid format
+938,this is not a valid log line,invalid format
+943,this is not a valid log line,invalid format
+944,this is not a valid log line,invalid format
+947,"10.0.0.5 - - [20/Mar/2026:10:17:39 +0900] ""PUT /api/users HTTP/1.1"" 999 100",status_code out of range: 999
+951,"192.168.0.10 - - [20/Mar/2026:10:29:16 +0900] ""FETCH / HTTP/1.1"" 200 100",invalid method: FETCH
+956,"192.168.0.10 - - [20/Mar/2026:10:38:20 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+966,this is not a valid log line,invalid format
+971,"8.8.8.8 - - [20/Mar/2026:10:28:52 +0900] ""INVALID /index.html HTTP/1.1"" 200 100",invalid method: INVALID
+985,"8.8.8.8 - - [20/Mar/2026:10:44:04 +0900] ""FETCH /api/orders HTTP/1.1"" 200 100",invalid method: FETCH
+999,"127.0.0.1 - - [20/Mar/2026:10:29:58 +0900] ""INVALID /api/users HTTP/1.1"" 200 100",invalid method: INVALID
+1000,"10.0.0.5 - - [20/Mar/2026:10:28:17 +0900] ""FETCH /login HTTP/1.1"" 200 100",invalid method: FETCH

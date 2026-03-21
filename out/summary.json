@@ -1,0 +1,10 @@
+{
+  "input_file": "data/access.log",
+  "valid_record_count": 847,
+  "invalid_record_count": 153,
+  "total_valid_requests": 847,
+  "client_error_count_4xx": 372,
+  "server_error_count_5xx": 178,
+  "total_error_count": 550,
+  "error_rate": 0.6494
+}
