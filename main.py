@@ -58,6 +58,7 @@ def process_log_file(input_path: str, output_dir: str) -> None:
         **aggregated["summary"],
         "top_ips": aggregated["top_ips"],
         "top_endpoints": aggregated["top_endpoints"],
+        "requests_per_hour": aggregated["requests_per_hour"],
     }
 
     write_summary(summary_output, output_dir)
@@ -69,6 +70,7 @@ def process_log_file(input_path: str, output_dir: str) -> None:
             "summary": summary_output,
             "top_ips": aggregated["top_ips"],
             "top_endpoints": aggregated["top_endpoints"],
+            "requests_per_hour": aggregated["requests_per_hour"],
         }
     )
 

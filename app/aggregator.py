@@ -1,4 +1,5 @@
 from collections import Counter
+from datetime import datetime
 from typing import List, Dict, Any
 
 
@@ -6,6 +7,7 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
     ip_counter = Counter()
     endpoint_counter = Counter()
     status_counter = Counter()
+    hourly_counter = Counter()
 
     total_requests = 0
     client_error_count = 0  # 4xx
@@ -15,10 +17,15 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         ip = record["ip"]
         url = record["url"]
         status_code = int(record["status_code"])
+        timestamp = record["timestamp"]
 
         ip_counter[ip] += 1
         endpoint_counter[url] += 1
         status_counter[status_code] += 1
+
+        dt = datetime.strptime(timestamp, "%d/%b/%Y:%H:%M:%S %z")
+        hour_bucket = dt.strftime("%Y-%m-%d %H:00")
+        hourly_counter[hour_bucket] += 1
 
         total_requests += 1
 
@@ -27,9 +34,9 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         elif 500 <= status_code <= 599:
             server_error_count += 1
 
-        top_n = 5
-        top_ips = ip_counter.most_common(top_n)
-        top_endpoints = endpoint_counter.most_common(top_n)
+    top_n = 5
+    top_ips = ip_counter.most_common(top_n)
+    top_endpoints = endpoint_counter.most_common(top_n)
 
     total_error_count = client_error_count + server_error_count
     error_rate = (total_error_count / total_requests) if total_requests else 0.0
@@ -45,6 +52,7 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         "requests_per_ip": dict(ip_counter),
         "requests_per_endpoint": dict(endpoint_counter),
         "status_code_counts": dict(status_counter),
+        "requests_per_hour": dict(hourly_counter),
         "top_ips": top_ips,
         "top_endpoints": top_endpoints,
     }

@@ -68,3 +68,7 @@ def print_cli_summary(result: Dict[str, Any]) -> None:
     print("\nTop 5 Endpoints:")
     for endpoint, count in result.get("top_endpoints", []):
         print(f"  {endpoint}: {count}")
+
+    print("\nRequests Per Hour:")
+    for hour, count in result.get("requests_per_hour", {}).items():
+        print(f"  {hour}: {count}")
