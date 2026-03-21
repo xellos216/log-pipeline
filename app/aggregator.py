@@ -27,6 +27,10 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         elif 500 <= status_code <= 599:
             server_error_count += 1
 
+        top_n = 5
+        top_ips = ip_counter.most_common(top_n)
+        top_endpoints = endpoint_counter.most_common(top_n)
+
     total_error_count = client_error_count + server_error_count
     error_rate = (total_error_count / total_requests) if total_requests else 0.0
 
@@ -41,4 +45,6 @@ def aggregate_logs(records: List[Dict[str, Any]]) -> Dict[str, Any]:
         "requests_per_ip": dict(ip_counter),
         "requests_per_endpoint": dict(endpoint_counter),
         "status_code_counts": dict(status_counter),
+        "top_ips": top_ips,
+        "top_endpoints": top_endpoints,
     }

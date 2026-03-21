@@ -56,12 +56,21 @@ def process_log_file(input_path: str, output_dir: str) -> None:
         "valid_record_count": len(valid_records),
         "invalid_record_count": len(invalid_logs),
         **aggregated["summary"],
+        "top_ips": aggregated["top_ips"],
+        "top_endpoints": aggregated["top_endpoints"],
     }
 
     write_summary(summary_output, output_dir)
     write_aggregated_csv(aggregated, output_dir)
     write_invalid_logs(invalid_logs, output_dir)
-    print_cli_summary({"summary": summary_output})
+
+    print_cli_summary(
+        {
+            "summary": summary_output,
+            "top_ips": aggregated["top_ips"],
+            "top_endpoints": aggregated["top_endpoints"],
+        }
+    )
 
 
 def build_arg_parser() -> argparse.ArgumentParser:

@@ -441,9 +441,28 @@ bad line without proper format
 
 ---
 
-## 샘플 로그 생성기
+## 명령어
 
-테스트용 샘플 로그를 생성할 수 있습니다:
-
+Generate sample logs:
 ```bash
-python scripts/generate_logs.py --output data/access.log --count 1000```
+python scripts/generate_log.py --output data/access.log --count 1000 --invalid-ratio 0.15
+```
+
+Run the pipeline:
+```bash
+python main.py --input data/access.log --output out/
+```
+
+---
+
+## 출력 결과 예시
+
+- `summary.json`: 전체 처리 결과 요약 및 에러율
+- `aggregated.csv`: IP, endpoint, 상태 코드 기준 집계 결과
+- `invalid_logs.csv`: 형식 오류 또는 유효하지 않은 로그 기록
+
+## 설명
+
+이 프로젝트는 반정형(semi-structured) 서버 로그를 파싱하고, 잘못된 데이터를 검증 및 분리하며, 운영에 유의미한 지표로 집계한 뒤, 후속 분석에 활용 가능한 형태로 출력하는 실용적인 로그 처리 파이프라인을 구현한 것입니다.  
+
+또한 ELK, Splunk, SIEM과 같은 로그 처리 시스템에서 사용되는 전처리(preprocessing) 계층의 핵심 흐름을 단순화하여 재현한 프로젝트입니다.

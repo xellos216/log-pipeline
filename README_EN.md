@@ -364,10 +364,23 @@ It is not just a script, but a simplified model of a real log processing pipelin
 
 --
 
-## Generating Sample Logs
+## Sample Commands
 
-You can generate test logs using:
+Generate sample logs:
 
 ```bash
-python scripts/generate_logs.py --output data/access.log --count 1000
+python scripts/generate_log.py --output data/access.log --count 1000 --invalid-ratio 0.15
 ```
+
+Run the pipeline:
+```bash
+python main.py --input data/access.log --output out/
+```
+
+Output Examples
+summary.json: pipeline summary and error rate
+aggregated.csv: aggregated metrics by IP, endpoint, and status code
+invalid_logs.csv: malformed or invalid log records
+Interview Explanation
+
+This project demonstrates a practical log processing workflow: parsing semi-structured server logs, validating bad records, aggregating operational metrics, and exporting results for downstream analysis. It reflects the core preprocessing layer used in systems such as ELK, Splunk, and SIEM pipelines.

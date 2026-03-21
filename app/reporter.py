@@ -60,3 +60,11 @@ def print_cli_summary(result: Dict[str, Any]) -> None:
     print(f"5xx errors           : {summary['server_error_count_5xx']}")
     print(f"Total errors         : {summary['total_error_count']}")
     print(f"Error rate           : {summary['error_rate']:.2%}")
+
+    print("\nTop 5 IPs:")
+    for ip, count in result.get("top_ips", []):
+        print(f"  {ip}: {count}")
+
+    print("\nTop 5 Endpoints:")
+    for endpoint, count in result.get("top_endpoints", []):
+        print(f"  {endpoint}: {count}")
