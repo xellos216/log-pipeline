@@ -1,57 +1,57 @@
 {
   "input_file": "data/access.log",
-  "valid_record_count": 847,
-  "invalid_record_count": 153,
-  "total_valid_requests": 847,
-  "client_error_count_4xx": 372,
-  "server_error_count_5xx": 178,
-  "total_error_count": 550,
-  "error_rate": 0.6494,
+  "valid_record_count": 174,
+  "invalid_record_count": 26,
+  "total_valid_requests": 174,
+  "client_error_count_4xx": 79,
+  "server_error_count_5xx": 43,
+  "total_error_count": 122,
+  "error_rate": 0.7011,
   "top_ips": [
     [
-      "10.0.0.5",
-      172
+      "127.0.0.1",
+      44
     ],
     [
-      "192.168.0.10",
-      172
+      "10.0.0.5",
+      39
     ],
     [
       "172.16.1.20",
-      171
+      39
     ],
     [
       "8.8.8.8",
-      167
+      30
     ],
     [
-      "127.0.0.1",
-      165
+      "192.168.0.10",
+      22
     ]
   ],
   "top_endpoints": [
     [
-      "/index.html",
-      147
-    ],
-    [
-      "/dashboard",
-      128
-    ],
-    [
-      "/",
-      128
-    ],
-    [
       "/api/users",
-      123
+      29
+    ],
+    [
+      "/index.html",
+      27
     ],
     [
       "/api/orders",
-      113
+      27
+    ],
+    [
+      "/login",
+      26
+    ],
+    [
+      "/health",
+      24
     ]
   ],
   "requests_per_hour": {
-    "2026-03-20 10:00": 847
+    "2026-03-20 10:00": 174
   }
 }

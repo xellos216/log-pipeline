@@ -8,6 +8,12 @@ parse → validate → aggregate → report
 
 ---
 
+## Demo
+
+![Log Pipeline Demo](docs/cli-demo.gif)
+
+---
+
 ## 1. Purpose
 
 Logs in real systems are often messy and inconsistent.

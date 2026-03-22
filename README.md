@@ -10,6 +10,12 @@ parse → validate → aggregate → report
 
 ---
 
+## Demo
+
+![Log Pipeline Demo](docs/cli-demo.gif)
+
+---
+
 ## 1. 프로젝트 목적
 
 실제 운영 환경의 로그는 항상 깨끗하지 않습니다.
